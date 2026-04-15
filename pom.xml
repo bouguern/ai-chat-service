@@ -28,7 +28,25 @@
 	</scm>
 	<properties>
 		<java.version>21</java.version>
+		<!--
+            Import ensures all dev.langchain4j:* modules share the same version.
+            Without this, transitive dependency conflicts cause NoSuchMethodError at runtime.
+        -->
+		<langchain4j.version>0.31.0</langchain4j.version>
 	</properties>
+	
+	<dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>dev.langchain4j</groupId>
+                <artifactId>langchain4j-bom</artifactId>
+                <version>${langchain4j.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+    
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -38,6 +56,32 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		
+		<!-- Actuator: /actuator/health, /actuator/metrics, /actuator/prometheus -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <!--
+            Micrometer Prometheus registry.
+            Exposes /actuator/prometheus for scraping by Prometheus or Grafana Cloud.
+            This is where ai.llm.request.duration metrics will appear.
+        -->
+        <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-registry-prometheus</artifactId>
+        </dependency>
+
+        <!-- LangChain4j core — ChatMessage types, Response, abstractions -->
+        <dependency>
+            <groupId>dev.langchain4j</groupId>
+            <artifactId>langchain4j</artifactId>
+        </dependency>
+        <!-- LangChain4j Ollama adapter — OkHttp transport to local Ollama -->
+        <dependency>
+            <groupId>dev.langchain4j</groupId>
+            <artifactId>langchain4j-ollama</artifactId>
+        </dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
