@@ -444,10 +444,6 @@ Building production Java + AI systems and writing about the patterns that actual
 
 ---
 
-*Currently open to Java / AI engineering roles. If you're building systems where these patterns matter, feel free to reach out.*
-
----
-
 ## License
 
 MIT — see [LICENSE](LICENSE) for details.
