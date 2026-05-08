@@ -7,7 +7,7 @@
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
 [![Tests](https://img.shields.io/badge/Tests-31%20passing-success?style=flat-square)]()
 
-> Read the full article on Medium → *[https://medium.com/@bouguern.mohamed/designing-a-production-ready-ai-chat-service-with-spring-boot-langchain4j-ollama-and-hexagonal-d5cf11d61bb8]*
+> Read the full article on Medium → (https://medium.com/@bouguern.mohamed/designing-a-production-ready-ai-chat-service-with-spring-boot-langchain4j-ollama-and-hexagonal-d5cf11d61bb8)
 
 ---
 
@@ -435,7 +435,7 @@ Field injection (`@Autowired`) produces objects that can be partially initialise
 | Day 9 | Tool Calling | AI executes Java methods |
 | Day 11 | Multi-Agent | Agent orchestration patterns |
 
-Full schedule: *[https://medium.com/@bouguern.mohamed/designing-a-production-ready-ai-chat-service-with-spring-boot-langchain4j-ollama-and-hexagonal-d5cf11d61bb8]*
+Full schedule: (https://medium.com/@bouguern.mohamed/designing-a-production-ready-ai-chat-service-with-spring-boot-langchain4j-ollama-and-hexagonal-d5cf11d61bb8)
 
 ---
 
@@ -456,8 +456,8 @@ This repository accompanies a blog series — the code intentionally evolves fro
 
 Building production Java + AI systems and writing about the patterns that actually matter in enterprise environments.
 
-- Medium: *[https://medium.com/@bouguern.mohamed]*
-- LinkedIn: *[https://www.linkedin.com/in/mohamed-bouguern/]*
+- [Medium](https://medium.com/@bouguern.mohamed)
+- [LinkedIn](https://www.linkedin.com/in/mohamed-bouguern/)
 
 ---
 
