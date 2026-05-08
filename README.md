@@ -7,7 +7,7 @@
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
 [![Tests](https://img.shields.io/badge/Tests-31%20passing-success?style=flat-square)]()
 
-> Read the full article on Medium → (https://medium.com/@bouguern.mohamed/designing-a-production-ready-ai-chat-service-with-spring-boot-langchain4j-ollama-and-hexagonal-d5cf11d61bb8)
+> Read the full article on Medium → [Medium Article](https://medium.com/@bouguern.mohamed/designing-a-production-ready-ai-chat-service-with-spring-boot-langchain4j-ollama-and-hexagonal-d5cf11d61bb8)
 
 ---
 
@@ -419,23 +419,6 @@ It is — intentionally. The known limitations (no persistence on restart, singl
 ### Why constructor injection everywhere?
 
 Field injection (`@Autowired`) produces objects that can be partially initialised — a subtle category of runtime bugs. Constructor injection forces all dependencies to be present at construction time, making the object graph explicit and every class trivially testable without a Spring context.
-
----
-
-## What comes next in the series
-
-| Day | Topic | What it introduces |
-|---|---|---|
-| **Day 1** | **This repo** | Hexagonal arch · stateful chat · local LLM |
-| Day 2 | RAG Pipeline | pgvector · document ingestion · semantic search |
-| Day 3 | WebSocket Chatbot | STOMP · real-time streaming |
-| Day 4 | SSE Streaming | Token-by-token streaming responses |
-| Day 5 | Redis Memory | Replace in-memory repo · TTL eviction |
-| Day 6 | Semantic Search | pgvector embeddings · cosine similarity |
-| Day 9 | Tool Calling | AI executes Java methods |
-| Day 11 | Multi-Agent | Agent orchestration patterns |
-
-Full schedule: (https://medium.com/@bouguern.mohamed/designing-a-production-ready-ai-chat-service-with-spring-boot-langchain4j-ollama-and-hexagonal-d5cf11d61bb8)
 
 ---
 
