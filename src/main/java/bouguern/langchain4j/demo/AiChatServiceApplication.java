@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Java21Springboot3Langchain4jOllamaApplication {
+public class AiChatServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Java21Springboot3Langchain4jOllamaApplication.class, args);
+		SpringApplication.run(AiChatServiceApplication.class, args);
 	}
 
 }

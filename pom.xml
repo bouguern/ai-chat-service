@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>bouguern.langchain4j</groupId>
-	<artifactId>java21-springboot3-langchain4j-ollama</artifactId>
+	<artifactId>ai-chat-service</artifactId>
 	<version>0.0.1</version>
-	<name>java21-springboot3-langchain4j-ollama</name>
-	<description>A production-ready AI service using LangChain4j and Ollama inside a Spring Boot application using Hexagonal Architecture</description>
+	<name>ai-chat-service</name>
+	<description>A production-ready AI Chat Service using LangChain4j and Ollama inside a Spring Boot application using Hexagonal Architecture</description>
 	<url/>
 	<licenses>
 		<license/>

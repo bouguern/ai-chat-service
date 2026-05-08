@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: ai-chat-service
+
+server:
+  port: 8890
+  error:
+    # Never leak stack traces or internal messages to API consumers
+    include-message: never
+    include-stacktrace: never
+
+app:
+  ai:
+    ollama:
+      # Override in Docker with: APP_AI_OLLAMA_BASE_URL=http://ollama:11434
+      base-url: http://localhost:11434
+      # Must match pulled model: `ollama pull llama3.2:1b`
+      model-name: llama3.2:1b
+      # Ollama-specific param: num_predict = max tokens to generate
+      num-predict: 1024
+      # 0.0 = deterministic, 1.0 = very creative
+      temperature: 0.7
+      # CPU inference can take 60-90s for first token
+      timeout-seconds: 300
+
+  conversation:
+    # Sliding window: max messages sent to model per request
+    max-history-size: 20
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, metrics, prometheus
+  endpoint:
+    health:
+      show-details: when-authorized
